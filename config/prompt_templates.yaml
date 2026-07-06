@@ -1,1 +1,29 @@
+# Reusable prompt templates
+# Loaded by src.prompt_engineering.templates.TemplateManager
 
+templates:
+  summarize:
+    description: "Summarize a piece of text"
+    template: "Please summarize the following text concisely:\n\n{text}"
+
+  translate:
+    description: "Translate text to a target language"
+    template: "Translate the following text to {language}:\n\n{text}"
+
+  explain:
+    description: "Explain a concept at a given level"
+    template: "Explain {concept} as if I were a {audience}."
+
+  code_review:
+    description: "Review a code snippet"
+    template: >
+      Review the following {language} code for bugs, style issues, and
+      potential improvements:
+
+      ```{language}
+      {code}
+      ```
+
+  brainstorm:
+    description: "Generate ideas about a topic"
+    template: "Generate {count} creative ideas about {topic}."
