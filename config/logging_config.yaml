@@ -1,1 +1,12 @@
+# Logging Configuration
+# WARNING: Never set log level to DEBUG in production — it may expose sensitive data.
 
+level: "INFO"
+
+format: "%(asctime)s [%(levelname)s] %(name)s: %(message)s"
+date_format: "%Y-%m-%d %H:%M:%S"
+
+# File logging (optional)
+# file: "logs/app.log"
+# max_bytes: 10485760  # 10 MB
+# backup_count: 5

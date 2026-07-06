@@ -1,0 +1,62 @@
+# Environment and secrets
+.env
+.env.local
+.env.production
+*.key
+*.pem
+secrets/
+
+# API keys and credentials - NEVER commit these
+config/model_config.local.yaml
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Cache and data (may contain sensitive outputs)
+data/cache/*.json
+!data/cache/sample.json
+data/outputs/*.json
+!data/outputs/sample.json
+data/embeddings/*.json
+
+# Logs
+*.log
+logs/

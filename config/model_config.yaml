@@ -1,1 +1,26 @@
+# =============================================================================
+# Model Configuration
+# =============================================================================
+# WARNING: Do NOT put API keys or secrets in this file.
+# API keys must be set as environment variables (see .env.example).
+# This file contains only non-sensitive model parameters.
+# =============================================================================
 
+openai:
+  default_model: "gpt-4"
+  max_tokens: 1024
+  temperature: 0.7
+  top_p: 1.0
+  frequency_penalty: 0.0
+  presence_penalty: 0.0
+
+anthropic:
+  default_model: "claude-3-sonnet-20240229"
+  max_tokens: 1024
+  temperature: 0.7
+
+rate_limiting:
+  requests_per_minute: 60
+  tokens_per_minute: 90000
+  retry_attempts: 3
+  retry_delay_seconds: 1.0

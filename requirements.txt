@@ -1,0 +1,8 @@
+# Core dependencies
+openai>=1.12.0
+anthropic>=0.18.0
+pyyaml>=6.0.1
+python-dotenv>=1.0.0
+
+# Optional: for precise token counting
+# tiktoken>=0.6.0

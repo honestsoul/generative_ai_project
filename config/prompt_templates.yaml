@@ -1,1 +1,11 @@
+# Prompt Templates
+# Define reusable prompt templates here.
+# Use {variable_name} syntax for template variables.
 
+summarize: "Please summarize the following text concisely:\n\n{text}"
+
+translate: "Translate the following text to {target_language}:\n\n{text}"
+
+code_review: "Review the following code for bugs, security issues, and best practices:\n\n```{language}\n{code}\n```"
+
+explain: "Explain the following concept in simple terms:\n\n{concept}"
