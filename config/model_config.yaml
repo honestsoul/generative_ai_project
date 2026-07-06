@@ -1,1 +1,21 @@
+# Model configuration
+# Replace placeholder values with your actual API keys.
 
+openai:
+  api_key: ""  # or set OPENAI_API_KEY env var
+  default_model: "gpt-3.5-turbo"
+  max_tokens: 1024
+  temperature: 0.7
+
+anthropic:
+  api_key: ""  # or set ANTHROPIC_API_KEY env var
+  default_model: "claude-3-sonnet"
+  max_tokens: 1024
+  temperature: 0.7
+
+defaults:
+  provider: "openai"
+  model: "gpt-3.5-turbo"
+
+rate_limiting:
+  max_calls_per_minute: 60

@@ -1,1 +1,26 @@
+# Logging configuration
+# Used by src.utils.logger if you prefer YAML-based config loading.
 
+version: 1
+disable_existing_loggers: false
+
+formatters:
+  standard:
+    format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+handlers:
+  console:
+    class: logging.StreamHandler
+    level: INFO
+    formatter: standard
+    stream: ext://sys.stdout
+
+  file:
+    class: logging.FileHandler
+    level: DEBUG
+    formatter: standard
+    filename: data/outputs/app.log
+
+root:
+  level: INFO
+  handlers: [console]
