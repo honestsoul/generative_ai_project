@@ -78,8 +78,9 @@ pip install -r requirements.txt
 ```
 
 3. Configure your environment:
-   - Copy `config/model_config.yaml.example` to `config/model_config.yaml`
-   - Add your API keys and configurations
+   - Copy `.env.example` to `.env` and add your API keys there
+   - **Never** put API keys in config files or source code
+   - See [SECURITY.md](SECURITY.md) for details
 
 4. Review the examples in `examples/` directory
 
@@ -89,7 +90,8 @@ pip install -r requirements.txt
 
 ### Configuration
 
-- `model_config.yaml`: Configure API keys and model parameters
+- `.env`: Store API keys here (git-ignored, never committed)
+- `model_config.yaml`: Non-sensitive model parameters only (temperature, max_tokens, etc.)
 - `prompt_templates.yaml`: Define reusable prompt templates
 - `logging_config.yaml`: Configure logging behavior
 
